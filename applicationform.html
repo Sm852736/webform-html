@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>applicationform | html</title>
+</head>
+<body>
+    <form action="">
+        <h1>application Form</h1>
+        <h2>Contact Information</h2>
+        <!-- For Name -->
+        <p><strong>First Name:</strong> <input type="text" name="First Name" required></p>
+        <p><strong>Last Name:</strong> <input type="text" name="Last Name" required></p>
+        <!-- For gender -->
+        <fieldset>
+            <legend><h3>Gender</h3></legend>
+        <p>Male <input type="radio" name="Gender" id="Male" required> &nbsp; 
+            Female <input type="radio" name="Gender" id="Female" required></p>
+        </fieldset>
+        <!-- Address -->
+        <p><h3>Address</h3> <textarea name="Address" id="Address" cols="30" rows="6"></textarea></p>
+        <!-- pincode -->
+        <p><strong>Pincode:</strong> <input type="number" name="pincode" id="pincode"></p>
+        <!-- email -->
+        <p><strong>Email: </strong><input type="email" name="Gmail" id="Gmail" required></p>
+        <h2>Payment Details</h2>
+        <!-- for card type selection -->
+        <p><strong>Card Type:</strong>
+            <select name="cardtype" id="cardtype" required>
+                <option value="">--select a card--</option>
+                <option value="Visa">Master Card</option>
+                <option value="Master Card">Master Card</option>
+                <option value="Rupay">Rupay</option>
+            </select>
+        </p>
+        <p>
+            <strong>Card Number:</strong> <input type="number" name="card number" id="card number" required>
+        </p>
+        <p>
+            <strong>Expiration Date:</strong> <input type="date" name="Expiration-date" id="Expiration-date" required>
+        </p>
+        <p><strong>CVV:</strong><input type="password" name="CVV" id="CVV" required></p>
+        <input type="submit" value="Pay Now">
+        
+        <input type="reset" value="Reset">
+
+    </form>
+</body>
+</html>
